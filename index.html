@@ -6,7 +6,6 @@
   <title>Orizon Software Foundation</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-
     body {
       font-family: Georgia, "Times New Roman", serif;
       background: #1a1a1a;
@@ -14,7 +13,6 @@
       line-height: 1.65;
       padding: 24px;
     }
-
     .wrap {
       max-width: 760px;
       margin: 0 auto;
@@ -23,7 +21,6 @@
       box-shadow: 0 0 20px rgba(0,0,0,0.5);
       border: 1px solid #333;
     }
-
     h1 {
       font-size: 2.1em;
       font-weight: normal;
@@ -33,7 +30,6 @@
       margin-bottom: 18px;
       color: #e8e6e3;
     }
-
     h1 small {
       font-size: 0.44em;
       display: block;
@@ -41,7 +37,6 @@
       letter-spacing: 1.5px;
       margin-top: 4px;
     }
-
     h2 {
       font-size: 1.28em;
       font-weight: normal;
@@ -50,29 +45,23 @@
       border-bottom: 1px solid #3a3a3a;
       padding-bottom: 5px;
     }
-
     h3 {
       font-size: 1.05em;
       font-weight: bold;
       margin-top: 20px;
       color: #b8855a;
     }
-
     p {
       margin: 10px 0;
     }
-
     a {
       color: #e8923a;
       text-decoration: none;
     }
-
     a:hover {
       color: #f0a850;
       text-decoration: underline;
     }
-
-    /* nav */
     .nav {
       margin: 18px 0 22px 0;
       padding: 14px 0;
@@ -80,48 +69,39 @@
       border-bottom: 1px solid #3a3a3a;
       text-align: center;
     }
-
     .nav a {
       color: #d97a2b;
       text-decoration: none;
       font-size: 0.95em;
-      margin: 0 18px;
+      margin: 0 14px;
       letter-spacing: 0.8px;
       text-transform: lowercase;
     }
-
     .nav a:hover {
       color: #f0a850;
       text-decoration: underline;
     }
-
     ul.projects {
       list-style: none;
-      margin: 8px 0 8px 0;
+      margin: 8px 0;
     }
-
     ul.projects li {
-      padding: 7px 0 7px 16px;
+      padding: 7px 0 7px 14px;
       border-left: 2px solid #d97a2b;
       margin-bottom: 5px;
-      padding-left: 14px;
     }
-
     ul.projects li strong,
     ul.projects li a {
       color: #e8e6e3;
     }
-
     ul.projects li a:hover {
       color: #f0a850;
     }
-
     .proj-desc {
       font-size: 0.88em;
       color: #999;
       margin: 2px 0 0 0;
     }
-
     .footer {
       margin-top: 40px;
       padding-top: 15px;
@@ -130,13 +110,11 @@
       color: #666;
       text-align: center;
     }
-
     hr {
       border: none;
       border-top: 1px solid #3a3a3a;
       margin: 24px 0;
     }
-
     blockquote {
       margin: 14px 0 14px 20px;
       padding: 10px 18px;
@@ -145,7 +123,6 @@
       font-style: italic;
       color: #b0b0b0;
     }
-
     code {
       background: #1e1e22;
       padding: 1px 5px;
@@ -153,16 +130,23 @@
       font-size: 0.9em;
       color: #c9a87c;
     }
-
+    ul.benefits {
+      list-style: none;
+      margin: 12px 0;
+    }
+    ul.benefits li {
+      padding: 4px 0 4px 14px;
+      border-left: 2px solid #d97a2b;
+      margin-bottom: 4px;
+    }
     @media (max-width: 600px) {
       .wrap { padding: 20px 16px; }
       h1 { font-size: 1.5em; }
-      .nav a { display: inline-block; margin: 0 10px; }
+      .nav a { display: inline-block; margin: 6px 10px; }
     }
   </style>
 </head>
 <body>
-
 <div class="wrap">
 
   <h1>
@@ -173,13 +157,13 @@
   <div class="nav">
     <a href="#projects">projects</a>
     <a href="#websites">websites & services</a>
+    <a href="#umbrella">bring your project</a>
+    <a href="#git">git</a>
     <a href="#contact">contact</a>
-    <a href="#git">our Git repositories</a>
   </div>
 
   <!-- mission -->
   <h2>what we do</h2>
-
   <p>The Orizon Software Foundation is a small non-profit that maintains infrastructure libraries, developer tooling, and reference implementations for open protocols. We believe software should be free, open source, and reliable. No user should have to worry about spyware or malware with software that is free to use, free to modify, free to inspect.</p>
 
   <blockquote>
@@ -191,65 +175,68 @@
 
   <!-- projects -->
   <h2 id="projects">projects</h2>
-
   <p>These are the things we actually maintain:</p>
-
   <ul class="projects">
     <li>
-	<strong>OSFIX Operating System</strong>: Our FOSS Operating System <br>
-      <span class="proj-desc">More coming soon.</span>
+      <strong>OSFIX Operating System</strong>
+      <span class="proj-desc">Our FOSS operating system. More coming soon.</span>
     </li>
   </ul>
 
-  <!-- websites -->
+  <!-- websites & services -->
   <h2 id="websites">websites & services</h2>
-
   <p>Things we host that are not strictly code:</p>
-
   <ul class="projects">
     <li>
-      <strong>alligitor</strong>: forgejo-based git hosting for foundation projects.<br>
-      <span class="proj-desc">Self-hosted, no CI lock-in, mirrors to GitHub. Try it at <a href="https://alligitor.orizonsoftwarefoundation.org/">alligitor.orizonsoftwarefoundation.org</a>.</span>
-
-    </li>
-</span>
+      <strong>alligitor</strong>
+      <span class="proj-desc">Forgejo-based git hosting for foundation projects. Self-hosted, no CI lock-in, mirrors to GitHub. Try it at <a href="https://alligitor.orizonsoftwarefoundation.org/">alligitor.orizonsoftwarefoundation.org</a>.</span>
     </li>
     <li>
-      <strong>dembur</strong>: a privacy-respecting search engine.<br>
-      <span class="proj-desc">No ads, no data collection, no AI. Try it at <a href="https://search.orizonsoftwarefoundation.org/">search.orizonsoftwarefoundation.org</a>.</span>
+      <strong>dembur</strong>
+      <span class="proj-desc">A privacy-respecting search engine. No ads, no data collection, no AI. Try it at <a href="https://search.orizonsoftwarefoundation.org/">search.orizonsoftwarefoundation.org</a>.</span>
     </li>
+  </ul>
 
+  <!-- umbrella / bring your project -->
+  <h2 id="umbrella">bring your project under Orizon</h2>
+  <p>A lot of people want to <em>make</em> free software, not join an organization. We get that.</p>
+  <p>Independent FOSS projects can put themselves under the Orizon umbrella while staying fully independent. You keep your own governance, license, repositories, and direction. We simply give you a roof and some useful infrastructure.</p>
 
- <h2 id="git">our Git repositories</h2>
+  <h3>what you get</h3>
+  <ul class="benefits">
+    <li>A free email address under the <code>orizonsoftwarefoundation.org</code> domain</li>
+    <li>Free hosting: up to 120 GB storage, 24 GB RAM, 8 vCores, and 500 Mbps–1 Gbps networking</li>
+    <li>Optional listing on this page if you want visibility</li>
+    <li>Access to our Matrix room and the small community around the foundation</li>
+  </ul>
 
- <p>Here's where you can view, contribute, and inspect our code:
+  <p>We ensure your project stays yours. Once you're under our umbrella, your project stays fully independent. You can choose to opt out at any time if your experience and/or our services does not meet your standards.</p>
+  <p>If this sounds useful, write to <a href="/cdn-cgi/l/email-protection#04676b6a70656770446b766d7e6b6a776b627073657661626b716a6065706d6b6a2a6b7663"><span class="__cf_email__" data-cfemail="fa9995948e9b998eba95889380959489959c8e8d9b889f9c958f949e9b8e939594d495889d">[email&#160;protected]</span></a> and tell us about your project.</p>
 
-<ul class="git">
+  <!-- git -->
+  <h2 id="git">our Git repositories</h2>
+  <p>Here’s where you can view, contribute, and inspect our code:</p>
+  <ul class="projects">
+    <li>
+      <strong><a href="https://github.com/OrizonSoftwareFoundation">GitHub</a></strong>
+      <span class="proj-desc">Our main repositories & branches.</span>
+    </li>
+  </ul>
+  <p style="font-size:0.88em; color:#777;">Most, if not all of our projects are hosted on both GitHub and Alligitor.</p>
 
-  <li>
-      <strong><a href="https://github.com/OrizonSoftwareFoundation">Github</a></strong>: Our main repositories & branches <br>
-  </li>
-</ul>
-
-  <hr>
-
-  <p style="font-size:0.88em; color:#777;">Most, if not all of our projects are hosted on both Github and Alligitor.</p>
-
+  <!-- contact -->
   <h2 id="contact">contact & chats</h2>
-
   <p>
-    <a href="/cdn-cgi/l/email-protection#94f7fbfae0f5f7e0d4fbe6fdeefbfae7fbf2e0e3f5e6f1f2fbe1faf0f5e0fdfbfabafbe6f3"><span class="__cf_email__" data-cfemail="c2a1adacb6a3a1b682adb0abb8adacb1ada4b6b5a3b0a7a4adb7aca6a3b6abadacecadb0a5">[email&#160;protected]</span></a><br>
-    <a href="/cdn-cgi/l/email-protection#244841434548644b564d5e4b4a574b425053455641424b514a4045504d4b4a0a4b5643"><span class="__cf_email__" data-cfemail="4b272e2c2a270b24392231242538242d3f3c2a392e2d243e252f2a3f2224256524392c">[email&#160;protected]</span></a><br>
+    <a href="/cdn-cgi/l/email-protection#36555958425755427659445f4c59584559504241574453505943585257425f595818594451"><span class="__cf_email__" data-cfemail="197a76776d787a6d59766b706376776a767f6d6e786b7c7f766c777d786d70767737766b7e">[email&#160;protected]</span></a><br>
+    <a href="/cdn-cgi/l/email-protection#157970727479557a677c6f7a7b667a736162746770737a607b7174617c7a7b3b7a6772"><span class="__cf_email__" data-cfemail="422e2725232e022d302b382d2c312d243635233027242d372c2623362b2d2c6c2d3025">[email&#160;protected]</span></a><br>
     <a href="https://matrix.to/#/#Orizon-Software-Foundation:unredacted.org">Our Matrix room</a>, for planning and discussing
   </p>
 
-
   <div class="footer">
     &copy; 2026 Orizon Software Foundation (EUPL 1.2). Site makes no attempt to track you.<br>
-    <span style="font-size:0.9em;">Last updated July 14th, 2026</span>
+    <span style="font-size:0.9em;">Last updated August 21st, 2026</span>
   </div>
 
 </div>
-
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
 </html>
